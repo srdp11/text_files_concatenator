@@ -1,7 +1,5 @@
-package test.concatenator;
+package concatenator;
 
-import concatenator.FileUtils;
-import concatenator.TextFilesConcatenator;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
