@@ -103,9 +103,8 @@ public class FileUtils
         return new BufferedReader(new FileReader(file));
     }
 
-    private static BufferedWriter getFileWriter(File file) throws FileNotFoundException
+    private static BufferedWriter getFileWriter(File file) throws IOException
     {
-        // TODO: why so long ? (see ^)
-        return new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file)));
+        return new BufferedWriter(new FileWriter(file));
     }
 }
